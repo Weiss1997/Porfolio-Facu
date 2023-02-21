@@ -33,7 +33,7 @@ html{
 }
 #inicio .contenido header .contenido-header h1{
     text-align: center;
-    color: #d42e60; 
+    color: #14A3FA; 
 }
 #inicio .contenido header .contenido-header nav ul{
     list-style: none;
@@ -48,7 +48,7 @@ html{
     transition: .5s;
 }
 #inicio .contenido header .contenido-header nav ul a:hover{
-    color: #d42e60;
+    color: #14A3FA;
 }
 #inicio .contenido header .contenido-header .redes a{
     text-decoration: none;
@@ -58,10 +58,10 @@ html{
     transition: .5sS;
 }
 #inicio .contenido header .contenido-header .redes a:hover{
-    color:#d42e60;
+    color:#14A3FA;
 }
 #inicio .contenido header .contenido-header .seleccionado{
-    color: #d42e60;
+    color: #14A3FA;
 }
 #inicio .contenido .presentacion{
     max-width: 1100px;
@@ -86,7 +86,7 @@ html{
 }
 #inicio .contenido .presentacion h2 span {
     font-size: 38px;
-    color: #d42e60;
+    color: #14A3FA;
 }
 #inicio .contenido .presentacion .descripcion{
     max-width: 700px;
@@ -107,7 +107,7 @@ html{
     transition: .5s;
 }
 #inicio .contenido .presentacion a:hover{
-    background-color: #d42e60;
+    background-color: #14A3FA;
 }
 #icono-nav{
     color: #fff;
@@ -151,7 +151,7 @@ html{
     letter-spacing: 2px;
 }
 #sobremi .sobremi h2 span{
-    color: #d42e60;
+    color: #14A3FA;
 }
 #sobremi .sobremi h3{
     font-size: 18px;
@@ -163,7 +163,7 @@ html{
 #sobremi .sobremi p{
     font-size: 14px;
     line-height: 25px;
-    color: #d42e60;
+    color: #14A3FA;
     margin-bottom: 12px;
 }
 #sobremi .sobremi a{
@@ -177,7 +177,7 @@ html{
     transition: .5s;
 }
 #sobremi .sobremi a:hover{
-    background-color: #d42e60;
+    background-color: #14A3FA;
     color: #fff;
 }
 
@@ -364,7 +364,7 @@ SECCION PORFOLIO */
     position: absolute;
     left: 0;
     background-color: rgba(0,0,0,.8);
-    color: #d42e60;
+    color: #14A3FA;
     width: 100%;
     padding: 10px;
     opacity: 0;
@@ -424,7 +424,7 @@ SECCION PORFOLIO */
     font-weight: bold;
 }
 #contacto .btn-enviar:hover{
-    background-color: #d42e60;
+    background-color: #14A3FA;
     color: #fff;
 }
 footer{
