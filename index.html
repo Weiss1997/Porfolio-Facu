@@ -1,283 +1,186 @@
 <!DOCTYPE html>
-<html lang="sp">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <title>Porfolio Facu</title>
-</head>
-
-<body>
-    <!-- SECCION INICIO -->
-    <section id="inicio">
-        <div class="contenido">
-            <header>
-                <div class="contenido-header">
-                        <h1>/FW/</h1>
-                        <nav id="nav" class="">
-                            <ul id="links">
-                                <li>
-                                    <a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a>
-                                </li>
-                                <li>
-                                    <a href="#sobremi" onclick="seleccionar(this)">Sobre Mi</a>
-                                </li>
-                                <li>
-                                    <a href="#servicios" onclick="seleccionar(this)">Servicios</a>
-                                </li>
-                                <li>
-                                    <a href="#porfolio" onclick="seleccionar(this)">Porfolio</a>
-                                </li>
-                                <li>
-                                    <a href="#contacto" onclick="seleccionar(this)">Contacto</a>
-                                </li>
-                            </ul>
-                        </nav>
-
-                        <!-- ICONOS MENU RESPONSIVE -->
-                        <div id="icono-nav" onclick="responsiveMenu()">
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
-
-                        <!-- ICONOS DE LAS REDES  -->
-                        <div class="redes">
-                            <a href="https://www.linkedin.com/in/facundo-weiss-029a46195/">  <i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://www.instagram.com/facuuweiss32/">  <i class="fa-brands fa-instagram"></i></a>
-                            <a href=""></a>
-                        </div>
-                </div>
-            </header>
-            <div class="presentacion">
-                <p class="bienvenida"> Bienvenidos</p>
-                <h2>Soy <span>Facundo Weiss</span>, Desarrollador Web</h2>
-                <p class="descripcion"> 
-                    Diseño y codifico cosas hermosas y sencillas, y me encanta lo que hago.</p>
-                    <a href="#porfolio">Ir a Portafolio</a>
-            </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portafolio Facundo</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <a href="#home"><span class="logo nav__logo">F</span></a>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
         </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn__large">Contact</a>
+    </nav>
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/facuu.jpg" alt="header" />
+      </div>
+      <div class="header__content">
+        <div>
+          <h1>Facundo<br />Front-End Developer<br />UX/UI Designer</h1>
+        </div>
+        <p class="section__description">
+            I am a dedicated web developer, with creative talent, and passion for
+             convert my inspirations as a UI Designer into code.
+             My passion for the digital world began years ago and since then
+             I have perfected myself as a Front-End Developer and UX/UI Designer.
+        </p>
+        <!-- <div class="header__btn">
+          <button class="btn">Hire Me Now</button>
+        </div> -->
+      </div>
+    </header>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/bg.png" alt="bg" class="about__bg-1" />
+        <img src="assets/bg.png" alt="bg" class="about__bg-2" />
+        <img src="assets/weiss.jpg" alt="about" class="about__img" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">About Me</h2>
+        <p class="section__description">
+            I have been working as a front-end designer and developer since 2022.
+             I have always been someone who has both a creative and logical side.
+             When I discovered web design in college, I realized I would be a perfect fit.
+             I could use my creative side to design and my logical side to code.
+             As an added benefit, being a designer and developer allows me to ensure
+             that no details are lost in translation.
+        </p>
+        <!-- <div class="about__btn">
+          <button class="btn">Download CV</button>
+        </div> -->
+      </div>
     </section>
 
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi">
-        <div class="contenedor-foto">
-            <img src="img/facu.jpg" alt="">
+    <section class="section__container service__container" id="service">
+      <h2 class="section__header">My Services</h2>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-window-fill"></i></span>
+          <h4>Website Design</h4>
+          <p>
+            We craft user-friendly interfaces that engage visitors and help you
+            achieve your online goals with minimum efforts.
+          </p>
         </div>
-        <div class="sobremi">
-            <p class="titulo-seccion">
-                Sobre Mi
-            </p>
-            <h2>
-                Hola, soy <span> Facundo Weiss</span>
-            </h2>
-            <h3>
-                Desarrollador Web
-            </h3>
-            <p>
-                Trabajo como diseñador y desarrollador front-end desde 2022. 
-                Siempre he sido alguien que tiene tanto un lado creativo como lógico. 
-                Cuando descubrí el diseño web en la facultad, me di cuenta de que encajaría perfectamente. 
-                Podría usar mi lado creativo para diseñar y mi lado lógico para codificar. 
-            </p>
-            <P>
-                Como beneficio adicional, ser diseñador y 
-                desarrollador me permite asegurarme de que 
-                no se pierda ningún detalle en la traducción.</P>
-            <!-- <a href="#">Descargar CV</a> -->
+        <div class="service__card">
+          <span><i class="ri-smartphone-line"></i></span>
+          <h4>Mobile Design</h4>
+          <p>
+            From iOS to Android, we create apps that deliver seamless
+            performance and keep users coming back for more.
+          </p>
         </div>
+        <div class="service__card">
+          <span><i class="ri-share-fill"></i></span>
+          <h4>Content Marketing</h4>
+          <p>
+            Our services include creating blog posts, videos, and social media
+            content that drives traffic and engagement.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-window-fill"></i></span>
+          <h4>Front-End Development</h4>
+          <p>
+            Our SEO strategies are tailored to your specific goals, helping you
+            reach your target audience and grow your online presence.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-share-circle-line"></i></span>
+          <h4>Digital Marketing</h4>
+          <p>
+            From pay-per-click (PPC) advertising to social media marketing, we
+            ensure your brand stands out in the crowded digital landscape.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- SECCION SERVICIOS -->
-    <section id="servicios">
-        <h3 class="titulo-seccion">
-            MIS SERVICIOS
-        </h3>
-        <div class="fila">
-            <div class="servicio">
-                <span class="icono">
-                    <i class="fa-solid fa-code"> </i> 
-                </span>
-                    <h4>
-                        Diseñador
-                    </h4>
-                    <br>
-                    <hr>
-                    <ul class="servicios-tag"> 
-                        <li>UX/UI</li>
-                        <li>Web</li>
-                        <li>Aplicaciones</li>
-                        <li>Logotipos</li>
-                    </ul>
-                    <p>
-                        Valoro la estructura de contenido simple, 
-                        los patrones de diseño limpios y las interacciones bien pensadas.
-                    </p>
-                    <br>
-                    <hr>
-                    <h5>Herramientas de Diseño</h5>
-                    <br>
-                    <ul class="servicios-tag"> 
-                        <li>Adobe Illustrator</li>
-                        <li>Photoshop</li>
-                        <li>Adobe XD</li>
-                        <li>Marvel</li>
-                    </ul>
-            </div>
-            <div class="servicio">
-                <span class="icono">
-                    <i class="fa-solid fa-code"> </i> 
-                </span>
-                    <h4>
-                        Desarrollador front-end
-                    </h4>
-                    <br>
-                    <hr>
-                    <ul class="servicios-tag"> 
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                    </ul>
-                    <p>
-                        Me gusta codificar cosas desde cero
-                        y disfruto dando vida a las ideas en el navegador
-                    </p>
-                    <br>
-                    <hr>
-                    <h5>Herramientas de Desarrollo</h5>
-                    <br>
-                    <ul class="servicios-tag"> 
-                        <li>Visual Studio Code</li>
-                        <li>Visual Studio Community</li>
-                        <li>Github</li>
-                        <li>SQL Server</li>
-                    </ul>
-            </div>
+    <section class="section__container portfolio__container" id="portfolio">
+      <h2 class="section__header">My Portfolio</h2>
+      <p class="section__description">
+        Explore a sample of my projects
+      </p>
+      <div class="portfolio__grid">
+        <div class="portfolio__card">
+            <img src="assets/app muni.png" alt="portfolio" />
+          </div>
+        <div class="portfolio__card">
+          <img src="assets/f1.png" alt="portfolio" />
         </div>
+        <div class="portfolio__card">
+          <img src="assets/rock.png" alt="portfolio" />
+        </div>
+        <div class="portfolio__card">
+          <img src="assets/daily.png" alt="portfolio" />
+        </div>
+       <!--  <div class="portfolio__card">
+          <img src="assets/project-5.jpg" alt="portfolio" />
+        </div>
+        <div class="portfolio__card">
+          <img src="assets/project-6.jpg" alt="portfolio" />
+        </div> -->
+        <br>
+      </div>
+      <h2 class="section__header">Skills</h2>
+      <div class="portfolio__banner">
+        <div class="portfolio__banner__card">
+          <span><i class="ri-macbook-line"></i></span>
+          <h3>Design</h3>
+          <p>Figma | Canva</p>
+        </div>
+        <div class="portfolio__banner__card">
+          <span><i class="ri-macbook-line"></i></span>
+          <h3>Development</h3>
+          <p>VS Code | VS Community</p>
+        </div>
+        <div class="portfolio__banner__card">
+          <span><i class="ri-macbook-line"></i></span>
+          <h3>Data Base</h3>
+          <p>SQL Server</p>
+        </div>
+      </div>
     </section>
 
-    <!-- SECCION HABILIDADES -->
-    <!-- <div class="contenedor-skills" id="skills">
-        <h3>
-            HABILIDADES
-        </h3>
-        <div class="skills">
-            <div class="info">
-                <p>
-                    <span class="lista">
-                        HTML & CSS 
-                    </span>
-                </p>
-                <span class="porcentaje">
-                    95%
-                </span>
-            </div>
-            <div class="barra">   
-                <div id="html" class="">
-
-                </div>
-            </div>
-        </div>
-
-        <div class="skills">
-            <div class="info">
-                <p>
-                    <span class="lista">
-                        Javascript 
-                    </span>
-                </p>
-                <span class="porcentaje">
-                    80%
-                </span>
-            </div>
-            <div class="barra">   
-                <div id="javascript" class="">
-
-                </div>
-            </div>
-        </div>
-
-        <div class="skills">
-            <div class="info">
-                <p>
-                    <span class="lista">
-                        Base de Datos 
-                    </span>
-                </p>
-                <span class="porcentaje">
-                    95%
-                </span>
-            </div>
-            <div class="barra">   
-                <div id="bd" class="">
-
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- SECCION PORFOLIO -->
-    <section id="porfolio">
-                <h3 class="titulo-seccion"> 
-                    MIS PROYECTOS
-                </h3>
-                <div class="fila">
-                    <div class="proyecto">
-                        <div class="overlay">
-                        </div>
-                        <img src="img/app muni.png" alt="">
-                        <div class="info">
-                            <h4>App Planillas Alumnos</h4>
-                            <p>App autogestionable para relevamiento de datos</p>
-                        </div>
-                    </div>
-                    <div class="proyecto">
-                        <div class="overlay">
-                        </div>
-                        <img src="img/app muni.png" alt="">
-                        <div class="info">
-                            <h4> Descripcion del Proyecto</h4>
-                            <p>Diseño Web</p>
-                        </div>
-                    </div>
-                </div>
-                    
+    <section class="section__container contact__container" id="contact">
+      <div class="logo">M</div>
+      <h2 class="section__header">Tell me!</h2>
+      <p class="section__description">
+        If you can imagine it, you can program it!
+      </p>
+      <div class="contact__socials">
+        <a href="mailto:facuu_weiss@hotmail.com" target="_blank"><i class="ri-mail-line"></i></a>
+        <a href="https://www.linkedin.com/in/facundo-weiss-029a46195/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+        <a href="https://www.behance.net/facuweiss32" target="_blank"><i class="ri-behance-fill"></i></a>
+        <a href="https://dribbble.com/FacuWeiss" target="_blank"><i class="ri-dribbble-line"></i></a>
+        <a href="https://github.com/Weiss1997" target="_blank"><i class="ri-github-line"></i></a>
+        <a href="https://www.instagram.com/facuuweiss32/" target="_blank"><i class="ri-instagram-line"></i></a>
+      </div>
     </section>
-
-    <!-- SECCION CONTACTO -->
-    <section id="contacto">
-        <h3 class="titulo-seccion"> Contactate conmigo</h3>
-        <div class="contenedor-form">
-            <form action="">
-                <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
-                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
-                </div>
-                <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full">
-                </div>
-                <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
-                </div>
-
-                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
-            </form>
-        </div>
-    </section>
-
-    <!-- SECCION FOOTER -->
-    <footer >
-        <p>Todos los derechos reservados - 2023</p>
-        <div class="redes">
-            <a href="https://www.linkedin.com/in/facundo-weiss-029a46195/">  <i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/facuuweiss32/">  <i class="fa-brands fa-instagram"></i></a>
-        </div>
+    <footer class="footer">
+      Copyright © 2024 | All rights reserved.
     </footer>
 
-    <script src="js.js"></script>
-
-</body>
-
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
